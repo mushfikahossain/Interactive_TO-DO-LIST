@@ -53,6 +53,18 @@ task_element.appendChild(task_actions_ele);
 
 showTasks.appendChild(task_element);
 
-task.value = '';
+task.value = '';    
+
+
+edit_button.addEventListener('click', () => {
+    if (edit_button.innerText === "Edit") {
+        task_input_ele.removeAttribute("readonly"); 
+        task_input_ele.focus(); 
+        edit_button.innerText = "Save"; 
+    } else {
+        task_input_ele.setAttribute("readonly", "readonly"); 
+        edit_button.innerText = "Edit";
+    }
+});
 
 });
