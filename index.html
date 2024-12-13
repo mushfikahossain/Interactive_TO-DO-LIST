@@ -6,14 +6,8 @@
     <title>To Do List</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Comfortaa"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open Sans"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet"/>
   </head>
   <body>
     <header>
@@ -25,26 +19,15 @@
     </header>
 
     <section class="task-list">
-      <div class="task-header">
-        <h2>Tasks</h2>
-        <select name="option" id="option">
-          <option value="All" id="all">All</option>
-          <option value="Completed" id="completed">Completed</option>
-          <option value="Incomplete" id="incomplete">Incomplete</option>
-        </select>
-      </div>
-
-      <div id="tasks">
-        <div class="task">
-          <div class="content">
-            <input type="text" class="text" value="Task" readonly />
-          </div>
-          <div class="actions">
-            <button class="edit" id="edit">Edit</button>
-            <button class="delete" id="delete">Delete</button>
-          </div>
+        <div class="task-header">
+          <h2>Tasks</h2>
+          <select name="option" id="option">
+            <option value="All" id="all">All</option>
+            <option value="Completed" id="completed">Completed</option>
+            <option value="Incomplete" id="incomplete">Incomplete</option>
+          </select>
         </div>
-      </div>
+        <div id="tasks"></div>
     </section>
   </body>
 </html>
