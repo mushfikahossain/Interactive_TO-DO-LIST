@@ -67,4 +67,8 @@ edit_button.addEventListener('click', () => {
     }
 });
 
+delete_button.addEventListener('click', () => {
+    showTasks.removeChild(task_element);
+})
+
 });
